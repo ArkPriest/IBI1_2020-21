@@ -6,11 +6,12 @@ import numpy as np
 
 gene_lengths=np.array([9410,394141,4442,105338,19149,76779,126550,36296,842,15981])
 exon_counts=np.array([51,1142,42,216,25,650,32533,57,1,523])
+#create arrays of gene lengths and exon counts
 gene_lengths/exon_counts
 
 exon_lengths=gene_lengths/exon_counts
 exon_lengths.sort()
-
+#calculate the average length of each exon and sort them
 print(exon_lengths)
 
 import numpy as np
@@ -28,4 +29,5 @@ plt.boxplot(score,
             showfliers=True,
             notch=False
               )
+#specifies the parameter of the boxplot
 plt.show()
